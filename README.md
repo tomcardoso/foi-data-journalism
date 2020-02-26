@@ -1,5 +1,8 @@
 # FOIs and data journalism
 
+![Marinus van Reymerswaele’s The Tax Collector, 1542](https://upload.wikimedia.org/wikipedia/commons/6/64/Marinus_van_Reymerswale_-_The_Tax_Collector_-_WGA19329.jpg?uselang=en-ca)
+_Marinus van Reymerswaele’s The Tax Collector, 1542_
+
 This is the repository for a talk on marrying freedom of information requests and data journalism to report on criminal justice in Canada. The slides can be found here: https://tomcardoso.github.io/foi-data-journalism/
 
 This talk was originally given at the University of Winnipeg's [Centre for Access to Information and Justice](https://www.uwinnipeg.ca/caij/) on February 26, 2020. Here's a brief description:
@@ -8,8 +11,10 @@ This talk was originally given at the University of Winnipeg's [Centre for Acces
 
 Some resources mentioned:
 
-- [Full tipsheet](https://docs.google.com/document/d/1gD_mcXhp_uonu5g88oFcGm-ZibmPW2CF9zL64BRJQmw/)
-- [FOI tracking spreadsheet](https://docs.google.com/spreadsheets/d/1dKy_NL2X_u6IQhBPAy7ZFvvqYcvi5m3G4u8bB3P-hpc/)
+- [Full tipsheet](https://docs.google.com/document/d/1uJDF-Vuccmj6szdpH6Z-2SjmOR3DgQvZe8vn4XF7bnA/)
+- [My FOI tracking spreadsheet](https://docs.google.com/spreadsheets/d/1dKy_NL2X_u6IQhBPAy7ZFvvqYcvi5m3G4u8bB3P-hpc/)
 - [Piggyback bookmarklet for federal requests](https://tomcardoso.github.io/piggyback/)
+- [Startr, a template for data journalism in R](https://www.github.com/globeandmail/startr/)
+- [Klaxon](https://github.com/themarshallproject/klaxon/)
 - [FOI basics talk](https://github.com/tomcardoso/foi-basics)
 - [Intro to scraping class](https://github.com/tomcardoso/intro-to-scraping)

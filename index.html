@@ -1,0 +1,295 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<style>
+			.reveal h1 {
+				text-transform: none;
+				line-height: 1;
+			}
+			.reveal ul {
+				margin: 0;
+			}
+			.reveal li {
+				margin-bottom: 0.5em;
+			}
+			.reveal p {
+				margin: 0;
+				margin-bottom: 0.5em;
+			}
+			.reveal em {
+				opacity: 0.6;
+			}
+			.reveal .font-small {
+				font-size: 0.8em;
+			}
+			p.color-request {
+				font-size: 0.9em;
+			}
+			span.text-red {
+				color: #e41a1c;
+			}
+			.text-blue {
+				color: #377eb8;
+			}
+			.text-green {
+				color: #4daf4a;
+			}
+			.text-purple {
+				color: #984ea3;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h1>FOIs and data journalism</h1>
+				</section>
+
+				<section>
+					<img src="img/letters.jpg" alt="" style="width: auto; height: 70vh;" />
+				</section>
+
+				<section>
+					<h1><a href="https://bit.ly/2HR391k">bit.ly/2HR391k</a></h1>
+				</section>
+
+				<section>
+					<p>You can also find the GitHub repository for this presentation at:</p>
+					<p><a href="https://github.com/tomcardoso/foi-data-journalism">github.com/tomcardoso/foi-data-journalism</a></p>
+				</section>
+
+				<section>
+					<h2>About me</h2>
+					<img style="width: 30vw; height: auto;" src="https://s3.amazonaws.com/arc-authors/tgam/a8259486-b51b-4dc2-abdb-dfeb95506353.JPG" />
+					<p>Tom Cardoso, crime and justice reporter and data journalist at The Globe and Mail</p>
+					<p><a href="https://www.twitter.com/tom_cardoso">@tom_cardoso</a></p>
+				</section>
+
+				<section>
+					<h3>Why give this talk?</h3>
+					<ol>
+						<li>I’ve specialized in using FOIs to extract large databases from police, municipal, provincial and federal governments.</li>
+						<li>So far, I’ve won more battles for access than I’ve lost.</li>
+						<li>This is a vastly underused technique in Canada.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>What we’ll cover today</h3>
+					<ol>
+						<li>FOI basics</li>
+						<li>Why use data FOIs?</li>
+						<li>So you’re filing a data FOI</li>
+						<li>You’ve obtained a huge dataset. Now what?</li>
+						<li>Tools to help you stay on top of your data FOIs</li>
+						<li>Example stories</li>
+						<li>Lightning round tips</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>1-minute FOI recap</h3>
+				</section>
+
+				<section>
+					<p class="color-request"><em>All documents (including but not limited to research, presentations, documents, briefing notes, memos, summaries, communications, reports, etc.) relating to amnesty, pardons, clemency, expungement of records, etc. following the national legalization of cannabis for people who were previously charged or convicted of a cannabis-related crime. From Jan. 1, 2015 to present (September 19, 2018). Please provide records as they become available and call me immediately for any clarifications. Exclude media monitoring and cabinet confidences.</em></p>
+				</section>
+
+				<section>
+					<p>
+						<span class="text-red">WHERE</span>
+						<span class="text-blue">WHAT</span>
+						<span class="text-green">WHEN</span>
+						<span class="text-purple">HOW</span>
+					</p>
+					<p class="color-request"><em><span class="text-red">All documents (including but not limited to research, presentations, documents, briefing notes, memos, summaries, communications, reports, etc.)</span> <span class="text-blue">relating to amnesty, pardons, clemency, expungement of records, etc. following the national legalization of cannabis for people who were previously charged or convicted of a cannabis-related crime.</span> <span class="text-green">From Jan. 1, 2015 to present (September 19, 2018).</span> <span class="text-purple">Please provide records as they become available and call me immediately for any clarifications. Exclude media monitoring and cabinet confidences.</span></em></p>
+				</section>
+
+				<section>
+					<h3>Why use data FOIs?</h3>
+				</section>
+
+				<section>
+					<p>Several reasons…</p>
+					<ul>
+						<li>In Canada, we don’t file these very much. Journalists in the U.S. learned long ago that these FOIs work.</li>
+						<li>Data is pliable. Why trust a government’s aggregated/summarized data when you can get the raw stuff?</li>
+						<li>Often, these databases go completely unanalyzed by the agencies that maintain them.</li>
+					</ul>
+				</section>
+
+				<section>
+					<p>The biggest reason, perhaps:</p>
+					<p><strong>These requests are often easier than regular FOIs.</strong></p>
+				</section>
+
+				<section>
+					<h3>So you’re filing a data FOI</h3>
+				</section>
+
+				<section>
+					<p>In some cases, it doesn’t hurt to go through the front door and just <strong>ask for the database</strong> without an FOI. You’d be surprised how often this works – particularly for municipal governments. Tell them you’d rather save everyone the time and effort of having to deal with an FOI.</p>
+				</section>
+
+				<section>
+					<h3>Before filing, do your homework</h3>
+					<ul>
+						<li>Find out the name of the database (this is key!). It’s likely very boring and uninspired.</li>
+						<li>Who administers it? Is there any documentation, handbooks or manuals online?</li>
+						<li>Is the structure (column names) for this database listed anywhere? Protip: This is often referred to as the database <strong>“schema.”</strong></li>
+					</ul>
+				</section>
+
+				<section>
+					<p>What do forms used for this database look like?</p>
+					<img src="img/boats.jpg" alt="" style="width: 70vw; height: auto;" />
+				</section>
+
+				<section>
+					<h3>Writing your request</h3>
+					<p>The goal here is to get a spreadsheet (.xls, .xlsx, .csv) or database (.sql) file. So we need to be explicit:</p>
+					<p><em>Please provide a machine-readable, itemized (i.e. record-level) export in database or spreadsheet format (i.e. Microsoft Excel, Access, SQL or CSV file format, not .PDF) of the FATE firearms database, going back to when the database was created, along with a sample “FATE report” form which police forces use to request a trace.</em></p>
+				</section>
+
+				<section>
+					<p>And, if you don’t know the name of the database… list all the fields you’re hoping for.</p>
+					<p style="font-size: 0.6em"><em>Please provide a machine-readable itemized database or spreadsheet (i.e. Microsoft Excel, Access, SQL or CSV file format, not .PDF) of seized and surrendered firearms (via amnesty programs or the like) firearms from 2000 to present day. The database should include fields for: make, model, and registration category ((a) restricted, (b) prohibited or (c) non-restricted) for the firearm; whether the firearm was seized or surrendered; date the firearm was seized or surrendered; location (postal code is sufficient) where the firearm was seized or surrendered; whether the gun was suspected to have been used in a criminal offence or criminal activity (i.e. a “crime gun”); whether the gun was attempted to be traced, and if so, successfully or not; if the gun was successfully traced, whether it was traced to the United States; if the gun was successfully traced, whether it was traced to a domestic source; if the gun was successfully traced, whether it was traced to a licensed gun owner; if the gun was successfully traced, whether it was reported as lost (or stolen) to the RCMP; if the gun was successfully traced, the date and location of its registration with the RCMP; if a crime gun, the number and type of crimes the gun was connected to.</em></p>
+				</section>
+
+				<section>
+					<p>Asking for a <strong>machine-readable, itemized</strong> file is key. Otherwise, you end up with:</p>
+					<img src="img/spreadsheet.jpg" alt="" style="width: auto; height: 50vh;" />
+				</section>
+
+				<section>
+					<p>File your request. And prepare yourself for the inevitable phone call or email:</p>
+					<ul>
+						<li>“I don’t even know where to begin with this request”</li>
+						<li>“Who am I supposed to send this to?”</li>
+						<li>“I have no idea what any of this means”</li>
+						<li>“That sounds like a lot of files”</li>
+						<li>“We’ve never received a request like this”</li>
+						<li>“You’ll never get this”</li>
+					</ul>
+					<p style="font-size: 0.6em;">(These are all real responses I’ve gotten from FOI coordinators)</p>
+				</section>
+
+				<section>
+					<p>Once your FOI has been received, reach out to the coordinator and reiterate what you’re after. They will appreciate it. You can also use this as an opportunity to ask to be connected with a database administrator.</p>
+				</section>
+
+				<section>
+					<p>Some offices will be stubborn.</p>
+					<ul>
+						<li>“We're not required to create new files”</li>
+						<li>“I don’t know how to redact this”</li>
+						<li>“We don’t have any data that exactly matches your request”</li>
+					</ul>
+				</section>
+
+				<section>
+					<p>Tip: If filing the same request to multiple agencies (say, several police forces within a province), you can use this to your advantage:</p>
+					<ul>
+						<li>Play the agencies off each other.</li>
+						<li>Use one agency to get data from another agency.</li>
+					</ul>
+				</section>
+
+				<section>
+					<p><strong>Regarding costs</strong></p>
+					<p>“Dumping” (actual technical term) a database is easier than you think. Take any warnings about high costs with a grain of salt. Often, I’ve had to pay nothing or a minimal fee to have data extracted. FOI coordinators have told me in the past that they were surprised at how easy it was to produce the data.</p>
+				</section>
+
+				<section>
+					<p>Some other issues you will run into…</p>
+					<ul>
+						<li><strong>Problem:</strong> They don’t want to release it in spreadsheet form.</li>
+						<li><strong>Problem:</strong> You get the response and they redacted everything you cared about.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>You’ve got a 750,000-row dataset. Now what?</h3>
+				</section>
+
+				<section>
+					<ol>
+						<li>Expect to have to clean the data. Police databases, for instance, are usually a total mess.</li>
+						<li>Start simple. Calculate averages, count up items in the data. Make some simple charts to get a “feel” for the structure of the data.</li>
+						<li>Next, “interview” the data. Build out an analysis that can answer your interview questions.</li>
+						<li>Write a methodology story.</li>
+					</ol>
+				</section>
+
+				<section>
+					<p><strong>Consider learning a programming language.</strong></p>
+					<p>If your dataset is large enough, Excel and Google Docs will both choke. You’ll need to pick up some coding skills. Don’t worry: it’s fun, and easier than it looks!</p>
+					<p>I recommend a statistical programming language called <strong>R</strong>.</p> It’s what I use every single day.
+				</section>
+
+				<section>
+					<p>Shameless plug: if you want to use R, consider using The Globe and Mail’s <code><a href="https://www.github.com/globeandmail/startr"><strong>startr</strong></a></code> package. It’s a starter template for data journalism in R.</p>
+				</section>
+
+				<section>
+					<h3>Staying on top of your data FOIs</h3>
+					<p><a href="https://docs.google.com/spreadsheets/d/1dKy_NL2X_u6IQhBPAy7ZFvvqYcvi5m3G4u8bB3P-hpc/edit">My FOI request tracking spreadsheet</a></p>
+					<p><a href="https://tomcardoso.github.io/piggyback/">Piggyback</a>, a bookmarklet to easily file federal piggyback FOIs</p>
+					<p><a href="https://github.com/themarshallproject/klaxon/">Klaxon</a>, a free self-hosted web service that notifies you when a web page changes</p>
+				</section>
+
+				<section>
+					<h3>Stories</h3>
+				</section>
+
+				<section>
+					<p class="font-small"><strong><a href="https://www.theglobeandmail.com/canada/article-why-does-any-canadian-need-a-handgun-what-the-gun-control-debate-is/">Tracing Canada’s crime guns</a></strong></p>
+					<p class="font-small">We filed more than 40 FOIs for this story. Ultimately, we obtained a copy of CIBIN, Canada’s national ballistics database, which showed an assault rifle would do little to reduce gun violence.</p>
+					<img src="img/cibin.png" alt="" style="width: auto; height: auto;"  />
+				</section>
+
+				<section>
+					<p class="font-small"><strong><a href="https://www.theglobeandmail.com/canada/toronto/article-toronto-ontario-housing-rental-eviction-data-landlords-tenants/">Eviction factories</a></strong></p>
+					<p class="font-small">We obtained a full dump (500,000 rows) of Ontario’s Landlord and Tenant Board case management system.</p>
+					<img src="img/evictions.png" alt="" style="width: 50vw; height: auto;"  />
+				</section>
+
+				<section>
+					<p class="font-small"><strong><a href="https://www.theglobeandmail.com/news/toronto/suicide-on-the-subway/article35964929/">Subway suicides</a></strong></p>
+					<p class="font-small">A colleague’s protracted FOI fight led to a story on suicides on the Toronto Transit Commission’s subway system, which found the agency isn’t analyzing its own data</p>
+					<img src="img/subway.png" alt="" style="width: 35vw; height: auto;" />
+				</section>
+
+				<section>
+					<h3>Lightning round tips</h3>
+					<ul>
+						<li>Once your request is complete, consider filing a meta-FOI.</li>
+						<li>Companies don’t have a right to privacy. Don’t get pushed around on this!</li>
+						<li>If you’re looking for a list of all the databases managed by an agency, file an FOI asking for a list.</li>
+						<li>If you want to zoom out even further, consider filing a meta-piggyback: ask for a list of the text of all completed FOIs for that ministry.</li>
+					</ul>
+				</section>
+
+				<section>
+					<p>Tons of other tips available at <a href="https://docs.google.com/document/d/1uJDF-Vuccmj6szdpH6Z-2SjmOR3DgQvZe8vn4XF7bnA/">my tipsheet</a>.</p>
+				</section>
+
+				<section>
+					<h3>Thanks!</h3>
+				</section>
+
+			</div>
+		</div>
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				slideNumber: true,
+				hash: true,
+				history: true
+			});
+		</script>
+	</body>
+</html>
