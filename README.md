@@ -13,7 +13,8 @@ Some resources mentioned:
 
 - [Full tipsheet](https://docs.google.com/document/d/1uJDF-Vuccmj6szdpH6Z-2SjmOR3DgQvZe8vn4XF7bnA/)
 - [My FOI request tracking spreadsheet](https://docs.google.com/spreadsheets/d/1dKy_NL2X_u6IQhBPAy7ZFvvqYcvi5m3G4u8bB3P-hpc/)
-- [Piggyback, a bookmarklet to easily file federal piggyback FOIs](https://tomcardoso.github.io/piggyback/)
+- [ATIPster, a bookmarklet for filing federal access to information requests](https://tomcardoso.github.io/atipster/)
+- [Piggyback, a bookmarklet for requesting previously-released federal requests](https://tomcardoso.github.io/piggyback/)
 - [Startr, a template for data journalism in R](https://www.github.com/globeandmail/startr/)
 - [Klaxon, a free self-hosted web service that notifies you when a web page changes](https://github.com/themarshallproject/klaxon/)
 - [FOI basics talk](https://github.com/tomcardoso/foi-basics)
